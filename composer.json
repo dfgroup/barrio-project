@@ -21,7 +21,7 @@
         "composer/installers": "^1.0",
         "drupal-composer/drupal-scaffold": "^2.0.0",
         "cweagans/composer-patches": "^1.6.0",
-        "drupal/lightning": "^8.1.10"
+        "drupal/barrio": "^8.1.0"
     },
     "repositories": [
         {
@@ -32,11 +32,11 @@
     "scripts": {
       "post-install-cmd": [
         "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
-        "Acquia\\Lightning\\ScriptHandler::deployLibraries"
+        "DFGroup\\Barrio\\ScriptHandler::deployLibraries"
       ],
       "post-update-cmd": [
         "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
-        "Acquia\\Lightning\\ScriptHandler::deployLibraries"
+        "DFGroup\\Barrio\\ScriptHandler::deployLibraries"
       ]
     },
     "config": {
