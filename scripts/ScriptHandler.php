@@ -28,7 +28,7 @@ class ScriptHandler {
         }
       }
       if (isset($barrio)) {
-        $barrio = str_replace('{$name}', 'barrio', $lightning);
+        $barrio = str_replace('{$name}', 'barrio', $barrio);
 
         $executor = new ProcessExecutor($event->getIO());
         $output = NULL;
